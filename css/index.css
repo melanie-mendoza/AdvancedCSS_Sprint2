@@ -227,6 +227,24 @@ nav a {
   top: 0;
   background-color: lightgrey;
 }
+.form {
+  margin-top: 20%;
+  padding: 10%;
+  background-color: lightskyblue;
+}
+.form h2 {
+  padding-bottom: 3%;
+}
+.label {
+  font-size: 2rem;
+}
+input {
+  font-size: 2rem;
+}
+.submit-btn {
+  font-size: 5rem;
+  padding: 5%;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -318,7 +336,7 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media (max-width: 500px) {
   .home .walk {
@@ -369,7 +387,7 @@ footer {
   }
 }
 .home .walk-img {
-  width: 100% !important;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .home .walk-img {
