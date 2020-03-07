@@ -1,29 +1,71 @@
 // Home Content
 
 .home {
+  margin-top: 14%;
 
   .intro {
 
+    @media @phone {
+      margin: 3%;
+      margin-top: 20%;
+      width: 100%;
+  }
+
     h2 {
       padding: 15px;
+      margin-left: 2%;
     }
 
     p {
       padding:0 15px;
+      margin-left: 2%;
     }
   
+  } //end of intro
+
+  .main-img {
+    width: 96%;
+
+    @media @phone {
+      width: 93%;
+    }
+  }
+
+  .sky {
+    @media @phone {
+      display: none;
+    }
+  }
+
+  .launch {
+    @media @phone {
+      display: none;
+    }
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    .small-img();
+
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 2px;
+      margin-left: 1.5%;
+    }
+  }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+      width: 97%;
+      margin: 0;
+      padding: 0;
+      border-radius: 6px;
     }
   }
 
@@ -32,22 +74,36 @@
 
     h3 {
       margin-top: 11px;
+      margin-left: 1.5%;
     }
 
     p {
       margin-top: 13px;
+      margin-left: 1.5%;
+      text-align: justify;
     }
   }
 
   .walk {
-    margin-top: 60px;
+    margin-top: 1%;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
+    @media @phone {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
 
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +114,30 @@
       }
 
       .btn {
+        a {
+          color: white;
+          text-decoration: none;
+        }
+        .custom-btn(20px, black);
+        &:hover{
+          color: white;
+          background-color: rgb(102, 211, 178);
+        }
+
+        @media @phone {
+          width: 100%;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+    .walk-img {
+      width: 100% !important;
+  
+      @media @phone {
+        display: block;
+        padding-bottom: 2%;
       }
     }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-    }
-  }
-}// home
+  } //End Home
