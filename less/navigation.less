@@ -1,1 +1,57 @@
 // Navigation code here
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: 15%;
+    background-color: rgb(198, 243, 232);
+    opacity: 0.5;
+
+    @media @phone {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.container:hover {
+    opacity: 1.0;
+  }
+
+h1 {
+    font-size: 5rem;
+    margin-left: 38%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+
+    @media @phone {
+        margin-left: 18%;
+        font-size: 4rem;
+    }
+}
+
+nav {
+    padding-bottom: 1%;
+
+    a {
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 13.5%;
+    color: black;
+
+    @media @phone {
+        margin-left: 3%;
+        font-size: 1.75rem;
+    }
+    
+}
+
+    @media @phone {
+        margin-left: 10%;
+    }
+}
+
+.sticky {
+    position: fixed;
+	width: 100%;
+	left: 0;
+    top: 0;
+    background-color: lightgrey;
+}
